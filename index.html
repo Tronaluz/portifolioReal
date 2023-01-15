@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/main-fotter.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css"
+        media="print" onload="this.media='all'">
+    <title>Bem vindo ao meu Portifolio</title>
+
+    <script>
+        document.addEventListener("visibilitychange", (event) => {
+          if (document.visibilityState === "visible") {
+            document.title = "Bem vindo ao meu Portifolio";
+          }  else {
+            document.title = "Ei vai embora  não 😢";
+          }
+        });
+    </script>
+
+</head>
+
+<body cz-shortcut-listen="true">
+    <header class="header-container">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"> </div>
+                    <nav class="menu-itens">
+                        <ul>
+                            <li>
+                                <a href="a">Home</a>
+                            </li>
+                            <li>
+                                <a href="a">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="a">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+  
+       
+            <span class="container2">
+                <h2 class="text" data-text="Lucas Eduardo de Oliveira">Lucas Eduardo de Oliveira</h2>
+            </span>
+        
+
+
+
+        <!-- <h1>Lucas Eduardo de Oliveira</h1> -->
+        <!-- <h2>Front-end developer</h2>
+         -->
+        <div  class="social-media">
+            <a href="https://www.linkedin.com/in/lucas-oliveira-b9459b209?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3B6r0WG5C9Ss6MSFT3p%2FWecg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile" target="_blank">Linkedin</a>
+            <a href="https://github.com/Tronaluz" target="_blank">Github</a>
+            <a href="lucas_tron@hotmail.com" target="_blank">Email</a>
+        </div>
+    </header>
+    <main class="container">
+        <div class="card-container">
+            <div class="card1">
+                <div  class="card-wrapper1">
+                    <a target="_blank" style="position:relative"href="https://tronaluz.github.io/Digital-Clock/" >
+                    <h2  >Projeto 1</h2>
+                    <p  >Vem ver !</p>
+                </a>
+                </div>
+            </div>
+            <div class="card-text">
+                Digital Clock
+                Projeto de relógio digital com intuitio de aperfeiçoamento em HTML, CSS E JS
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card2">
+                <div class="card-wrapper">
+                    <a target="_blank" style="position:relative"href="https://tronaluz.github.io/Gerador-de-senha/" ></a>
+                    <h2>Projeto 2</h2>
+                    <p>Vem ver !</p>
+                </div>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iste molestias architecto tempora
+                aliquid laboriosam recusandae veritatis dolorum similique,
+                enima ut quas pariatur dolorem quod soluta natus reprehenderit odit deserunt?
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Projeto 3</h2>
+                    <p>Vem ver !</p>
+                </div>
+            </div>
+            <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iste molestias architecto tempora
+                aliquid laboriosam recusandae veritatis dolorum similique,
+                enima ut quas pariatur dolorem quod soluta natus reprehenderit odit deserunt?
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <img id="perfil-foto" src="img/perfil.jpeg" alt="foto footer">
+       Criado por Lucas Eduardo de Oliveira
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
+    <script>
+        var cookieconsent = initCookieConsent();
+        cookieconsent.run({
+            current_lang: 'pt',
+            autoclear_cookies: true,                   // default: false
+            page_scripts: true,                        // default: false
+
+            // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+            // delay: 0,                               // default: 0
+            // auto_language: null                     // default: null; could also be 'browser' or 'document'
+            // autorun: true,                          // default: true
+            // force_consent: false,                   // default: false
+            // hide_from_bots: false,                  // default: false
+            // remove_cookie_tables: false             // default: false
+            // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
+            // cookie_expiration: 182,                 // default: 182 (days)
+            // cookie_necessary_only_expiration: 182   // default: disabled
+            // cookie_domain: location.hostname,       // default: current domain
+            // cookie_path: '/',                       // default: root
+            // cookie_same_site: 'Lax',                // default: 'Lax'
+            // use_rfc_cookie: false,                  // default: false
+            // revision: 0,                            // default: 0
+
+            onFirstAction: function (user_preferences, cookie) {
+                // callback triggered only once
+            },
+
+            onAccept: function (cookie) {
+                // ...
+            },
+
+            onChange: function (cookie, changed_preferences) {
+                // ...
+            },
+
+            languages: {
+                'pt': {
+                    consent_modal: {
+                        title: 'Nós usamos cookies!',
+                        description: 'Olá, esse website usa cookies essências para funcionar devidamente para entender como você interage conosco. <button type="button" data-cc="c-settings" class="cc-link">Detalhes</button>',
+                        primary_btn: {
+                            text: 'Aceitar Tudo',
+                            role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text: 'Rejeitar Tudo',
+                            role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal: {
+                        title: 'Preferências',
+                        save_settings_btn: 'Salvar configurações',
+                        accept_all_btn: 'Aceitar Tudo',
+                        reject_all_btn: 'Rejeitar Tudo',
+                        close_btn_label: 'Fechar',
+                        cookie_table_headers: [
+                            { col1: 'Nome' },
+                            { col2: 'Domínio' },
+                            { col3: 'Expiração' },
+                            { col4: 'Descrição' }
+                        ],
+                        blocks: [
+                            {
+                                title: 'Uso de cookies 📢',
+                                description: 'Eu uso cookies para funções básicas do website e para incrementar a experiência.Você pode escolher qual categoria você deseja aceitar. Para mais detalhes relativos aos cookies, leia tudo. <a href="#" class="cc-link">privacy policy</a>.'
+                            }, {
+                                title: 'Extremamente necessários',
+                                description: 'Esses cookies são extremamente importantes para o devido funcionamento do site. Sem eles podem haver estabilidade',
+                                toggle: {
+                                    value: 'necessary',
+                                    enabled: true,
+                                    readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                }
+                            }, {
+                                title: 'Cookies de perfomance e marketing',
+                                description: 'Cookies para aumentar a perfomance do site. E rastrear comportamentos',
+                                toggle: {
+                                    value: 'analytics',     // your cookie category
+                                    enabled: false,
+                                    readonly: false
+                                },
+                                cookie_table: [             // list of all expected cookies
+                                    {
+                                        col1: '^_ga',       // match all cookies starting with "_ga"
+                                        col2: 'google.com',
+                                        col3: '2 years',
+                                        col4: 'description ...',
+                                        is_regex: true
+                                    },
+                                    {
+                                        col1: '_gid',
+                                        col2: 'google.com',
+                                        col3: '1 day',
+                                        col4: 'description ...',
+                                    }
+                                ]
+                            }, {
+                                title: 'Advertisement and Targeting cookies',
+                                description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
+                                toggle: {
+                                    value: 'targeting',
+                                    enabled: false,
+                                    readonly: false
+                                }
+                            }, {
+                                title: 'More information',
+                                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
