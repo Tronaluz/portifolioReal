@@ -30,6 +30,7 @@ body {
 .header-container {
   height: 100vh;
   width: 100vw;
+  background-size: cover;
   background-color: black;
   background-image: url('./img/pexels-rahul-716398\ \(1\).jpg');
   background-repeat: no-repeat;
