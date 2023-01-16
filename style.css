@@ -47,7 +47,6 @@ body {
 
 
 *{
-  
   margin: 0;
  padding: 0;
  font-family: 'Montserrat', monospace;
@@ -56,7 +55,6 @@ body {
 
 
 .center-container1 {
-  
   position: relative;
   top:    50%;
   left: 50%;
@@ -65,7 +63,6 @@ body {
 
 
 .container2{
-  
   position: relative;
   display: inline-block;
   padding: 0 40px;
@@ -312,6 +309,8 @@ h2 {
 }
 
 .card-text {
+  font-family: 'Questrial', sans-serif;
+  font-size: large;
   width: 40%;
   letter-spacing: 1px;
   color: rgb(0, 0, 0);
