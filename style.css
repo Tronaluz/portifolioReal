@@ -30,8 +30,8 @@ body {
 .header-container {
   height: 100vh;
   width: 100vw;
-  background-size: cover;
   background-color: black;
+  background-size: cover;
   background-image: url('./img/pexels-rahul-716398\ \(1\).jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -326,7 +326,7 @@ h2 {
   position: relative;
 }
 
-.card-wrapper {
+.card-wrapper2 {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -347,7 +347,7 @@ h2 {
   transition: 0.5s ease-in-out;
 }
 
-.card-wrapper::before {
+.card-wrapper2::before {
   content: '';
   position: absolute;
   height: 100px;
@@ -366,7 +366,7 @@ h2 {
   transition: 0.5s ease-in-out;
 }
 
-.card-wrapper h2 {
+.card-wrapper2 h2 {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -382,7 +382,7 @@ h2 {
   transition: 0.5s ease-in-out;
 }
 
-.card-wrapper p {
+.card-wrapper2 p {
   font-size: 0;
   visibility: hidden;
   opacity: 0;
@@ -395,7 +395,7 @@ h2 {
   filter: unset;
 }
 
-.card:hover {
+.card2:hover {
   filter: unset;
 }
 
@@ -405,7 +405,7 @@ h2 {
   opacity: 1;
 }
 
-.card:hover > .card-wrapper::before{
+.card2:hover > .card-wrapper2::before{
   height: 200px;
   width: 200px;
   opacity: 1;
@@ -417,7 +417,7 @@ h2 {
  font-size: 14px;
 }
 
-.card:hover > .card-wrapper p {
+.card2:hover > .card-wrapper2 p {
   opacity: 1;
   visibility: visible;
   font-size: 14px;
