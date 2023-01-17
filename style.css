@@ -74,6 +74,7 @@ body {
 
 
 .text {
+  text-shadow: 2px 2px black;
   text-align: center;
   font-size: 100px;
   text-transform: uppercase;
@@ -113,6 +114,7 @@ h2 {
 }
 
 .social-media a {
+  text-shadow: 2px 2px black;
   align-content: center;
   text-decoration: none;
   color: #DAA520;
