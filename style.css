@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
+ @media screen and (min-width: 52px) {
+  
+ 
 body {
   animation: background 4s linear infinite;
   margin: 0;
@@ -518,3 +520,4 @@ h2 {
  }
 /* footeer */
 
+}
