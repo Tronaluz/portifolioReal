@@ -1,3 +1,5 @@
+@media screen and (min-width: 52px) {
+  
 .main-footer{
     width: 100%;
     height: auto;
@@ -14,3 +16,4 @@
         /* height: 50px; */
         border-radius: 50%;
     }
+}
