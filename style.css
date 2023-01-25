@@ -3,14 +3,19 @@
 
 
 @media screen and (min-width: 52px) {
-  
- 
 body {
   animation: background 4s linear infinite;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+}
+
+body {
+  animation: background 4s linear infinite;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 @keyframes background{
@@ -33,6 +38,24 @@ body {
 /* Header-cabeção */
 
 @media screen and (min-width: 50px) {
+  .header-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url('./img/pexels-rahul-716398\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+  }
+}
+
 .header-container {
   height: 100vh;
   width: 100vw;
@@ -50,8 +73,6 @@ body {
   padding: 0 112px;
   position: relative;
 }
-}
-
 
 *{
   margin: 0;
@@ -69,16 +90,36 @@ body {
 }
 
 @media screen and (min-width: 50px) {
+  .container2{
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    cursor: pointer;
+    
+  }
+  }
+
 .container2{
   position: relative;
   display: inline-block;
   padding: 0 40px;
   cursor: pointer;
-  
-}
+
 }
 
 
+
+@media screen and (min-width: 10px) {
+  .text {
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    animation: text 4s linear infinite;
+  }
+}
 
 
 .text {
@@ -91,18 +132,6 @@ body {
   animation: text 4s linear infinite;
 }
 
-@media screen and (min-width: 10px) {
-
-  .text {
-    text-shadow: 2px 2px black;
-    text-align: center;
-    font-size: 50px;
-    text-transform: uppercase;
-    font-weight: 900;
-    position: relative;
-    animation: text 4s linear infinite;
-  }
-}
 
 
 @keyframes text{
@@ -131,38 +160,62 @@ h2 {
 } 
 
 
+@media screen and (min-width: 10px) {
+  .social-media{
+   margin-top: 1rem;
+   display: flex;
+  }
+ }
+ 
+
 .social-media {
   margin-top: 1rem;
   display: flex;
 }
 
+@media screen and (min-width: 10px) {
+  .social-media a {
+        font-size: initial;
+    text-shadow: 2px 2px black;
+    align-content: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    animation: social-media 4s linear infinite;
+  }
+  }
+
 .social-media a {
-  text-shadow: 2px 2px black;
-  align-content: center;
-  text-decoration: none;
-  color: #DAA520;
-  padding: 1rem 4rem;
-  /* border: 1px solid #DAA520; */
-  min-width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: .5s ease-in-out;
-  animation: social-media 4s linear infinite;
+text-shadow: 2px 2px black;
+align-content: center;
+text-decoration: none;
+padding: 2rem 5rem;
+min-width: 10rem;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: .5s ease-in-out;
+animation: social-media 4s linear infinite;
 }
+
+
 
 @keyframes social-media{
   0% {
-    border: 1px solid #DAA520;
-    color: #DAA520;
+    border: 1px solid #2C3E50 ;
+    color: #2C3E50 ;
 }
 25%{
   border: 1px solid #ff0000;
   color: #ff0000;
 }
 50%{
-  border: 1px solid #ffa600;
-  color: #ffa600;
+  border: 1px solid #6C3483;
+  color: #6C3483;
 }
 75%{
   border: 1px solid #48bd2b;
