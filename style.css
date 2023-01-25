@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-
-@media screen and (min-width: 52px) {
 body {
   animation: background 4s linear infinite;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-}
 
-body {
-  animation: background 4s linear infinite;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-}
+@media(max-width: 500px) {
+  body {
+    animation: background 4s linear infinite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  }
 
 @keyframes background{
   0% {
@@ -37,25 +36,6 @@ body {
 }
 /* Header-cabeção */
 
-@media screen and (min-width: 50px) {
-  .header-container {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    background-image: url('./img/pexels-rahul-716398\ \(1\).jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 112px;
-    position: relative;
-  }
-}
-
 .header-container {
   height: 100vh;
   width: 100vw;
@@ -74,6 +54,26 @@ body {
   position: relative;
 }
 
+@media(max-width: 500px) {
+  .header-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url('./img/pexels-rahul-716398\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+  }
+}
+
+
 *{
   margin: 2;
  padding: 0;
@@ -89,7 +89,14 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 50px) {
+.container2{
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+@media(max-width: 500px) {
   .container2{
     position: relative;
     display: inline-block;
@@ -98,29 +105,6 @@ body {
     
   }
   }
-
-.container2{
-  position: relative;
-  display: inline-block;
-  padding: 0 40px;
-  cursor: pointer;
-
-}
-
-
-
-@media screen and (min-width: 10px) {
-  .text {
-    text-shadow: 2px 2px black;
-    text-align: center;
-    font-size: 29px;
-    text-transform: uppercase;
-    font-weight: 900;
-    position: relative;
-    animation: text 4s linear infinite;
-  }
-}
-
 
 .text {
   text-shadow: 2px 2px black;
@@ -132,7 +116,17 @@ body {
   animation: text 4s linear infinite;
 }
 
-
+@media(max-width: 500px) {
+  .text {
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    animation: text 4s linear infinite;
+  }
+}
 
 @keyframes text{
   0% {
@@ -157,37 +151,20 @@ body {
 h2 {
   text-align: center;
   color: #DAA520;
-} 
-
-
-@media screen and (min-width: 10px) {
-  .social-media{
-   margin-top: 1rem;
-   display: flex;
-  }
- }
- 
+}  
 
 .social-media {
   margin-top: 1rem;
   display: flex;
 }
 
-@media screen and (min-width: 10px) {
-  .social-media a {
-        font-size: initial;
-    text-shadow: 2px 2px black;
-    align-content: center;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    min-width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease-in-out;
-    animation: social-media 4s linear infinite;
+@media(max-width: 500px) {
+  .social-media{
+   margin-top: 1rem;
+   display: flow-root;
   }
-  }
+ }
+
 
 .social-media a {
 font-size: 200%;
@@ -203,6 +180,22 @@ transition: .5s ease-in-out;
 animation: social-media 4s linear infinite;
 }
 
+
+@media(max-width: 500px) {
+  .social-media a {
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    align-content: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    animation: social-media 4s linear infinite;
+  }
+  }
 
 
 @keyframes social-media{
