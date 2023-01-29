@@ -89,12 +89,54 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* svg{
+  width: 200%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -58%);
+}
+
+ svg text{
+  position: relative;
+  padding: 0 40px;
+  font-family:arial;
+  font-size: 3.5rem;
+  stroke: red;
+  stroke-width: 2px;
+  fill: transparent;
+  animation: anim 3s infinite alternate;
+}
+
+@keyframes anim{
+  from{stroke-dasharray: 0 70%;}
+  to{stroke-width: 50% 0; stroke-dasharray: 10%;}
+}
+
+@media(max-width: 500px) {
+  .Name{
+    position: relative;
+    display: inline-block;
+    padding: 0 40px;
+    
+  }
+  }  */
+
+
+
+
 .container2{
   position: relative;
   display: inline-block;
   padding: 0 40px;
   cursor: pointer;
 }
+
+
+h2 {
+  text-align: center;
+  color: #DAA520;
+}  
 
 @media(max-width: 500px) {
   .container2{
@@ -148,10 +190,6 @@ body {
 
 
 
-h2 {
-  text-align: center;
-  color: #DAA520;
-}  
 
 .social-media {
   margin-top: 1rem;
